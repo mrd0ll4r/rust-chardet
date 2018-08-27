@@ -7,6 +7,7 @@ const TEST_TABLE:&[(&str, &str, f32, &str)] = &[
     ("tests/data/ascii/howto.diveintomark.org.xml","ascii", 0.99, ""),
     ("tests/data/ascii/_chromium_iso-8859-1_with_no_encoding_specified.html","ascii", 0.99, ""),
     ("tests/data/ascii/_mozilla_bug638318_text.html","ascii", 0.99, ""),
+    ("tests/data/ascii/ascii_with_esc.txt","ascii", 0.99, ""),
     ("tests/data/Big5/0804.blogspot.com.xml","Big5", 0.99, "Chinese"),
     ("tests/data/Big5/blog.worren.net.xml","Big5", 0.99, "Chinese"),
     ("tests/data/Big5/carbonxiv.blogspot.com.xml","Big5", 0.99, "Chinese"),

@@ -302,6 +302,7 @@ impl UniversalDetector {
         } else {
             if self.m_got_data {
                 match self.m_input_state {
+                    enums::InputState::EscAscii |
                     enums::InputState::PureAscii => {
                         self.m_detected_charset = "ascii".to_string();
                         self.m_detected_confidence = 1.0;
@@ -325,7 +326,6 @@ impl UniversalDetector {
                                 .get_language();
                         }
                     }
-                    _ => unreachable!(),
                 }
             } else {
             }
